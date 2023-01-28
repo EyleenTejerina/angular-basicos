@@ -4,15 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HeroeModule } from './heroes/heroes.module';
+import { ContadorModule } from './contador/contador.module';
+
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,  //estan todos los componentes.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeroeModule,
+    ContadorModule //entran todos los modulos 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], ///estaran los servicios.
+  bootstrap: [AppComponent] //solo muestra un solo componente
 })
 export class AppModule { }
